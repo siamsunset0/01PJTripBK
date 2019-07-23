@@ -1,0 +1,75 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="modal-body">
+          <!-- Project Details Go Here -->
+          <h3 class="text-uppercase">名古屋レゴランド旅</h2>
+          <ul class="list-inline">
+            <li>2017年12月10日</li>
+          </ul>
+          <br>
+          <hr class="vertical">
+          <br>
+          <div class="moveline">
+            <div class="row">
+              <div width="100%">
+                  <img width="100%" src={% static 'img/icon/infosam.png' %} alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div>ノリタケの森</div>
+          </div>
+          <img class="img-fluid d-block mx-auto" src={% static 'img/photo/noritake.jpg' %} alt="">
+          <div class="moveline">
+            <div class="row">
+              <div width="100%">
+                  <img width="100%" src={% static 'img/icon/infosam.png' %} alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div>ノリタケの森レストラン</div>
+          </div>
+          <img class="img-fluid d-block mx-auto" src={% static 'img/photo/dish01.jpg' %} alt="">
+          <ul class="list-inline">
+            <li>とても美味しい</li>
+            <li>#オシャレランチ</li>
+          </ul>
+          <img class="img-fluid d-block mx-auto" src={% static 'img/photo/dish02.jpg' %} alt="">
+          <ul class="list-inline">
+            <li>#オシャレランチ</li>
+          </ul>
+          <img class="img-fluid d-block mx-auto" src={% static 'img/photo/dish03.jpg' %} alt="">
+          <ul class="list-inline">
+            <li>とても美味しい</li>
+          </ul>
+          <div class="moveline">
+            <div class="row">
+              <div width="100%">
+                  <img width="100%" src={% static 'img/icon/infosam.png' %} alt="">
+              </div>
+            </div>
+          </div>
+          <img class="img-fluid d-block mx-auto" src={% static 'img/photo/regorando.jpg' %} alt="">
+          <br>
+          <hr style="vertical-align:top">
+          <p class="item-intro text-muted">全体の動線</p>
+          <img class="img-fluid d-block mx-auto" src={% static 'img/photo/regomap.png' %} alt="">
+          <br>
+          <br>
+          <br>
+          <button class="btn btn-primary" data-dismiss="modal" type="button" onclick="location.href='{% url 'post_list' %}';">
+          <i class="fas fa-times"></i>
+          Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
